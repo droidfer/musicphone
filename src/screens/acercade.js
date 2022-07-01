@@ -1,16 +1,27 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import { Card, Text } from 'react-native-elements';
 
 const Acercade = ({navigation}) =>  {
   return (
     <View style={styles.container}>
       <View style={styles.formcontainer}>
-        <Text style={styles.title}>Acerca de</Text>
-        <Text>Ing. Fernando Martinez</Text>
-        <Text>Email: fmartinez@dotech.com.py</Text>
-        <Text>Contacto: +595 971 442200</Text>
-        <Text>Asuncion / Paraguay</Text>
-        <StatusBar style="auto" />
+        
+        <Card>
+          <Card.Title><Text style={styles.title}>Acerca de</Text></Card.Title>
+          <Card.Divider />
+          <Text style={{fontStyle: 'italic'}}>Ing. Fernando Martinez</Text>
+          <Text>
+            <Text style={{fontWeight: "bold"}}>Email:</Text>
+            <Text> fmartinez@dotech.com.py</Text>
+          </Text>
+          <Text>
+            <Text style={{fontWeight: "bold"}}>Contacto:</Text>
+            <Text> +595 971 442200</Text>
+          </Text>          
+            <Text>Asuncion / Paraguay</Text>
+          
+        </Card>  
       </View>
     </View>
   );
