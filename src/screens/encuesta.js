@@ -137,7 +137,7 @@ const requestOptions = {
           setItems={setItems}
         />
 
-        <Text style={styles.text}>CORREO ELECTRONICO</Text>
+        <Text style={styles.textupp}>CORREO ELECTRONICO</Text>
         <Input
           placeholder='Ingresar Correo Electronico'
           onChangeText={setEmail}
@@ -182,6 +182,16 @@ const styles = StyleSheet.create({
     letterSpacing: 0.25,
     color: 'white',
     marginBottom: 10,
+  }, 
+  textupp: {
+    fontSize: 16,
+    lineHeight: 21,
+    fontWeight: 'bold',
+    letterSpacing: 0.25,
+    color: 'white',
+    marginBottom: 10,
+    marginTop: 30,
+  
   },
   title: {
     color: 'white',
