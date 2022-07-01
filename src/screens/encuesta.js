@@ -83,6 +83,7 @@ const sendGenre = () => {
 
       })
       .catch((error) => {
+        setSending(false);
         Alert.alert(  
           'Error',  
           'Su encuesta no ha sido enviada correctamente. Verifique su conexion a internet',  
