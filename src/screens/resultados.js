@@ -38,8 +38,8 @@ const Resultados = ({navigation}) =>  {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Resultados</Text>
-      <StatusBar style="auto" />
 
+      <View style={styles.chart}>
       <VictoryChart domainPadding={{x: 40}} >
         <VictoryBar
           data={Resultado}
@@ -60,7 +60,7 @@ const Resultados = ({navigation}) =>  {
           }}
         />
       </VictoryChart>
-
+      </View>
 
     </View>
   );
@@ -74,6 +74,9 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "#fde7b5"
+  },
+  chart: {
+    marginLeft: 40,
   },
   title: {
     color: 'black',
